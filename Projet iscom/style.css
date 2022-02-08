@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url(https://fr.allfont.net/allfont.css?fonts=agency-fb);
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-left h1{
+    font-family: 'Agency FB', arial;
+    color: #182C61;
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+.text-left p{
+    color: #182C61;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding-bottom: 35px;
+}
+
+.img-right{
+    padding-top: 150px;
+}
+
+
+.button{
+    font-family: 'Lato', sans-serif;
+    border: none;
+    width: 200px;
+    background-color: #A5201E;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+/* Inscription étudiant */
+
+
+form{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+.form-student{
+    padding: 0 150px;
+}
+
+.form-student h1{
+    color: #182C61;
+    font-size: 40px;
+}
+
+.form-student input{
+    margin-top: 35px;
+    padding: 20px;
+    width: 100%;
+}
