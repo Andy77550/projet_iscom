@@ -1295,7 +1295,7 @@ button{
 .container-contact .contactInfo h2{
 	font-size: 24px;
 	font-weight: 500;
-	/* text-align: center; */
+	text-align: center;
 }
 
 .container-contact .contactInfo ul.info-contact{
@@ -1325,7 +1325,7 @@ button{
 }
 
 
-.container-contact .contactInfo ul.sci{
+/* .container-contact .contactInfo ul.sci{
 	position: relative;
 	display: flex;
 }
@@ -1339,12 +1339,20 @@ button{
 .container-contact .contactInfo ul.sci a{
 	text-decoration: none;
 	
-}
+} */
 
-.container-contact .contactInfo ul.sci i{
+/* .container-contact .contactInfo ul.sci i{
 	color: #273c75;
+	transition: .3s;
+	height: 800px;
 	
 }
+
+.container-contact .contactInfo ul.sci i:hover{
+	color: rgb(237, 0, 140);
+	
+} */
+
 
 .container-contact .contactInfo ul.info-contact li span:nth-child(2){
 	color: #273c75;
@@ -1576,6 +1584,10 @@ button{
 		padding: 40px;
 		height: 550px;
 		box-shadow: none;
+	}
+
+	.container-contact .contactInfo h2{
+		text-align: center;
 	}
 }
 
