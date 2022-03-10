@@ -714,7 +714,7 @@ button{
 	align-items: center;
 	background: #c8d6e5;
 	min-height: 65vh;
-	/* font-family: "Fira Sans", sans-serif; */
+	
 	
 	}
 
@@ -738,9 +738,9 @@ button{
 	cursor: pointer;
 }
 
-.imgBx{
+/* .imgBx{
 	width: 150px;
-}
+} */
 
 .info .container-card .card .imgBx{
 	position: absolute;
@@ -762,7 +762,8 @@ button{
 	left: -75px;
 	top: calc(50% - 75px);
 	transition: 0.5s ease-in-out;
-	background: #273c75;
+	background: rgb(237, 0, 140);
+	
 }
 .info .container-card .card .imgBx:before{
 	content: attr(data-text);
@@ -772,7 +773,7 @@ button{
 	width: 100%;
 	text-align: center;
 	font-size: 5em;
-	color: #273c75;
+	color: rgba(255, 255, 255, .05);
 	font-weight: 700;
 }
 .info .container-card .card .imgBx img{
