@@ -11,17 +11,17 @@
 //     },
 //  })
 
-let swiper = new Swiper(".discover__container", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    loop: true,
-    spaceBetween: 32,
-    coverflowEffect: {
-        rotate: 0,
-    },
-});
+// let swiper = new Swiper(".discover__container", {
+//     effect: "coverflow",
+//     grabCursor: true,
+//     centeredSlides: true,
+//     slidesPerView: "auto",
+//     loop: true,
+//     spaceBetween: 32,
+//     coverflowEffect: {
+//         rotate: 0,
+//     },
+// });
  
  /*==================== VIDEO ====================*/
 const videoFile = document.getElementById('video-file'),
@@ -96,7 +96,7 @@ videoFile.addEventListener('ended', finalVideo)
  
  
  sr.reveal(`.home__data, .home__social-link, .info,
-           .discover__container,
+           .actu-container, .propos__container,
            .experience__data, .experience__overlay,
            .place__card,
            .sponsor__content,
@@ -105,13 +105,15 @@ videoFile.addEventListener('ended', finalVideo)
     interval: 100,
  })
  
- sr.reveal(`.about__data, 
+ sr.reveal(`.about__data,
+           .propos__data,
            .video__description,
            .subscribe__description`,{
     origin: 'left',
  })
  
- sr.reveal(`.about__img-overlay, 
+ sr.reveal(`.about__img-overlay,
+           .propos__img-overlay, 
            .video__content,
            .subscribe__form`,{
     origin: 'right',
