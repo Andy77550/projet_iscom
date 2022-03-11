@@ -96,7 +96,7 @@ videoFile.addEventListener('ended', finalVideo)
  
  
  sr.reveal(`.home__data, .home__social-link, .info,
-           .actu-container, .propos__container,
+           .actu-container, 
            .experience__data, .experience__overlay,
            .place__card,
            .sponsor__content,
@@ -106,18 +106,19 @@ videoFile.addEventListener('ended', finalVideo)
  })
  
  sr.reveal(`.about__data,
-           .propos__data,
            .video__description,
            .subscribe__description`,{
     origin: 'left',
  })
  
- sr.reveal(`.about__img-overlay,
-           .propos__img-overlay, 
+ sr.reveal(`.about__img-overlay, 
            .video__content,
            .subscribe__form`,{
     origin: 'right',
     interval: 100,
  })
- 
+
+
+
+
  
