@@ -11,14 +11,16 @@
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
- 
+
+
+
 <!-- header start -->
 <header class="header">
     <div class="ctn">
         <div class="row v-center">
             <div class="header-item item-left">
                 <div class="logo">
-                    <a href="#"><img src="img/logo.png" alt=""></a>
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
                 </div>
             </div>
             <!-- menu start here -->
@@ -62,13 +64,13 @@
 						<a href="#">E-Learning <i class="fa fa-angle-down"></i></a>
                             <div class="sub-menu single-column-menu">
                                 <ul>
-                                    <li><a href="formation.html">Formation à distance</a></li>
-                                    <li><a href="#">Outils à disposition</a></li>
+                                    <li><a href="distance.html">Formation à distance</a></li>
+                                    <li><a href="outils.html">Outils à disposition</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="#">Actualités</a>
+                            <a href="actu.html">Actualités</a>
                         </li>
                          <li>
                             <a href="https://www.paris-villaroche-training-center.parcours.pro/" target="_blank">Plateforme</a>
@@ -307,7 +309,7 @@
 
 
 
-
+	
 
 
 
@@ -438,16 +440,16 @@
 				<h3 class="footer__subtitle">À propos </h3>
 				<ul>
 					<li class="footer__item">
-						<a href="" class="footer__link">Formation</a>
+						<a href="formation.html" class="footer__link">Formation</a>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">Actualités </a>
+						<a href="actu.html" class="footer__link">Actualités </a>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">Plateforme</a>
+						<a href="https://www.paris-villaroche-training-center.parcours.pro/" target="_blank" class="footer__link">Plateforme</a>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">Contact</a>
+						<a href="contact.html" class="footer__link">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -494,14 +496,41 @@
 	</div>
 </footer>
 
-
-
+<div class="wrapper">
+	<img src="img/cookie.png" alt="">
+	<div class="content">
+	  <h2>Cookies Consent</h2>
+	  <p>This website use cookies to ensure you get the best experience on our website.</p>
+	  <div class="buttons">
+		<button class="item">I understand</button>
+		<a href="#" class="item">Learn more</a>
+	  </div>
+	</div>
+  </div>
 
     <!--========== SCROLL UP ==========-->
 	<a href="#" class="scrollup" id="scroll-up">
 		<i class="ri-arrow-up-line scrollup__icon"></i>
 	</a>
 
+	<script>
+		const cookieBox = document.querySelector(".wrapper"),
+		acceptBtn = cookieBox.querySelector("button");
+	
+		acceptBtn.onclick = ()=>{
+		  //setting cookie for 1 month, after one month it'll be expired automatically
+		  document.cookie = "CookieBy=CodingNepal; max-age="+60*60*24*30;
+		  if(document.cookie){ //if cookie is set
+			cookieBox.classList.add("hide"); //hide cookie box
+		  }else{ //if cookie not set then alert an error
+			alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+		  }
+		}
+		let checkCookie = document.cookie.indexOf("CookieBy=CodingNepal"); //checking our cookie
+		//if cookie is set then hide the cookie box else show it
+		checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+	  </script>
+	
 
 <script src="js/scrollreveal.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
