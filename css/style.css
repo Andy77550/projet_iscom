@@ -1952,7 +1952,21 @@ a {
 	transition: .3s ease-in-out;
 }
 
-.btn:hover{
+.btn-2{
+	background-color: #273c75;
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 25px;
+	position: absolute;
+	bottom: 30px;
+	letter-spacing: 1px;
+	transition: .3s ease-in-out;
+}
+
+.btn:hover,.btn-2:hover{
 	background-color: rgb(237, 0, 140);
 	
 }
@@ -2013,12 +2027,176 @@ a {
 }
 
 
+/*    act */
+
+.actuali-container{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  }
+  
+  .actuali-card-content-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 30px;
+  }
+  
+  .actuali-card-content{
+	position: relative;
+	background: #fff;
+	max-width: 325px;
+	width: 325px;
+	height: auto;
+	margin: 25px;
+	box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+	border-radius: 10px;
+	overflow: hidden;
+  }
+  
+  .actuali-card-content-image{
+	max-height: 200px;
+  }
+  
+  .actuali-card-content-image img{
+	max-width: 100%;
+	height: auto;
+  }
+  
+  .actuali-card-content-info{
+	position: relative;
+	color: #222;
+	padding: 10px 20px 20px;
+  }
+  
+  .actuali-card-content-info h3{
+	font-size: 1.8em;
+	font-weight: 800;
+	margin-bottom: 5px;
+  }
+  
+  .actuali-card-content-info p{
+	font-size: 1em;
+	margin-bottom: 5px;
+  }
+  
+  .pagination{
+	text-align: center;
+	margin: 30px 30px 60px;
+	user-select: none;
+  }
+  
+  .pagination li{
+	display: inline-block;
+	margin: 5px;
+	box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+  }
+  
+  .pagination li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2em;
+	line-height: 45px;
+  }
+  
+  .previous-page, .next-page{
+	background-color: rgb(237, 0, 140);
+	width: 80px;
+	border-radius: 45px;
+	cursor: pointer;
+	transition: 0.3s ease;
+  }
+  
+  .previous-page:hover{
+	transform: translateX(-5px);
+  }
+  
+  .next-page:hover{
+	transform: translateX(5px);
+  }
+  
+  .current-page, .dots{
+	background: #ccc;
+	width: 45px;
+	border-radius: 50%;
+	cursor: pointer;
+  }
+  
+  .act{
+	background-color: rgb(237, 0, 140);
+  }
+  
+  .disable{
+	background: #ccc;
+  }
 
 
 
-
-
-
+  /*cookies*/
+  .wrapper{
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	max-width: 365px;
+	background: #fff;
+	padding: 25px 25px 30px 25px;
+	border-radius: 15px;
+	box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+	text-align: center;
+  }
+  .wrapper.hide{
+	opacity: 0;
+	pointer-events: none;
+	transform: scale(0.8);
+	transition: all 0.3s ease;
+  }
+  ::selection{
+	color: #fff;
+	background: #FCBA7F;
+  }
+  .wrapper img{
+	max-width: 90px;
+  }
+  .wrapper .content header{
+	font-size: 25px;
+	font-weight: 600;
+  }
+  .wrapper .content{
+	margin-top: 10px;
+  }
+  .wrapper .content p{
+	color: #858585;
+	margin: 5px 0 20px 0;
+  }
+  .wrapper .content .buttons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .wrapper .buttons button{
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 5px;
+	background: #FCBA7F;
+	cursor: pointer;
+	transition: all 0.3s ease;
+  }
+  .wrapper .buttons button:hover{
+	transform: scale(0.97);
+  }
+  .wrapper .buttons .item{
+	margin: 0 10px;
+  }
+  .wrapper .buttons a{
+	color: #FCBA7F;
+  }
 
 
 
@@ -2227,7 +2405,7 @@ a {
 		margin-bottom: 50px;
 	}
 
-	.btn{
+	.btn, .btn-2{
 		padding: 10px 15px;
 		/* float: right; */
 		font-size: 14px;
