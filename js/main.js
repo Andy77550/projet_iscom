@@ -22,6 +22,8 @@
 //         rotate: 0,
 //     },
 // });
+
+
  
  /*==================== VIDEO ====================*/
 const videoFile = document.getElementById('video-file'),
