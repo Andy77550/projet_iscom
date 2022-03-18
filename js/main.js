@@ -1,31 +1,4 @@
-/*==================== SWIPER DISCOVER ====================*/
-// let swiper = new Swiper(".discover__container", {
-//     effect: "coverflow",
-//     grabCursor: true,
-//     centeredSlides: true,
-//     slidesPerView: "auto",
-//     loop: true,
-//     spaceBetween: 32,
-//     coverflowEffect: {
-//         rotate: 0,
-//     },
-//  })
-
-// let swiper = new Swiper(".discover__container", {
-//     effect: "coverflow",
-//     grabCursor: true,
-//     centeredSlides: true,
-//     slidesPerView: "auto",
-//     loop: true,
-//     spaceBetween: 32,
-//     coverflowEffect: {
-//         rotate: 0,
-//     },
-// });
-
-
- 
- /*==================== VIDEO ====================*/
+/*==================== VIDEO ====================*/
 const videoFile = document.getElementById('video-file'),
 videoButton = document.getElementById('video-button'),
 videoIcon = document.getElementById('video-icon')
@@ -60,7 +33,7 @@ videoFile.addEventListener('ended', finalVideo)
  
  /*==================== SHOW SCROLL UP ====================*/ 
  function scrollUp(){
-    const scrollUp = document.getElementById('scroll-up');
+    const scrollUp = document.querySelector('.scroll-up');
     // When the scroll is higher than 200 viewport height, add the show-scroll class to the a tag with the scroll-top class
     if(this.scrollY >= 200) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
  }
@@ -98,7 +71,7 @@ videoFile.addEventListener('ended', finalVideo)
  
  
  sr.reveal(`.home__data, .home__social-link, .info,
-           .actu-container, 
+           .actu-container, .container,
            .experience__data, .experience__overlay,
            .place__card,
            .sponsor__content,
@@ -108,13 +81,13 @@ videoFile.addEventListener('ended', finalVideo)
  })
  
  sr.reveal(`.about__data,
-           .video__description,
+           .video__description, .container
            .subscribe__description`,{
     origin: 'left',
  })
  
  sr.reveal(`.about__img-overlay, 
-           .video__content,
+           .video__content, .container
            .subscribe__form`,{
     origin: 'right',
     interval: 100,
