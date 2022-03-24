@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
 </head>
 
 <body>
@@ -102,78 +104,126 @@
 
     <!-- img background -->
 
-    <section class="distance">
-        <h2>E-Learning</h2>
+    <section class="cont">
+        <h2>Contact</h2>
     </section>
     <br><br><br><br>
     <div class="main">
 
-        <section id="presentaion" class="py-4">
+        <section id="contact" class="py-4">
             <div class="container">
                 <div class="title-wrap">
-                    <h2 class="lg-title">Formation à distance</h2>
-                    <br>
-                    <span class="sm-title" style="display: inline;"> Cette plateforme à distance a été mise en place par le Training Center 4.0 dans le but d'améliorer la qualité de l’apprentissage en facilitant d’une part l’accès à des ressources et à des services, d’autre part les échanges et la collaboration à distance.</span>
+                    <h2 class="lg-title"> Merci de noter ci dessous vos noms, coordonnées ainsi que vos questions !
+                    </h2>
+                </div>
 
+            </div>
+        </section>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50236.83156661273!2d2.6484609497713203!3d48.56679442490831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5fb7b3824bca1%3A0xcb4dffb41c4ad580!2sA%C3%A9rodrome%20de%20Melun%20Villaroche!5e0!3m2!1sfr!2sfr!4v1646993857757!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <section id="contact" class="py-4">
+            <div class="container">
+                <div class="title-wrap">
+                    <span class="sm-title" style="display: inline;">Nous vous répondrons dans les plus brefs délais.</span>
                 </div>
-                <br><br>
-                <div class="about-row">
-                    <div class="about-left my-2">
-                        <img src="img/img-learning/paris-villarocheTC.png" alt="about img">
+                <div class="contact-row">
+                    <div class="contact-left">
+                        <form class="contact-form">
+                            <input type="text" name="nom" class="form-control" placeholder="Nom/Prénom" required>
+                            <input type="email" name="email" class="form-control" placeholder=" Email" required>
+                            <input type="text" name="phone" class="form-control" placeholder="Téléphone">
+                            <textarea rows="4" name="message" class="form-control" placeholder="Your message" style="resize: none;" aria-required></textarea>
+                            <input type="checkbox"> Je souhaite recevoir les informations complémentaires
+                            <br><br>
+                            <input type="submit" class="btn-form" value="Envoyer">
+                        </form>
+                        <?php
+                        if (isset($_POST['message'])) {
+                            $entete  = 'MIME-Version: 1.0' . "\r\n";
+                            $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+                            $entete .= 'From:' . $_POST["email"] . "\r\n";
+                            $entete .= 'Reply-to: ' . $_POST['email'];
+
+                            $message = '<h3>Ce message vous a été envoyé via la page contact du site Training Center 4.0</h3>
+                            Nom : '. $_POST["nom"] . '<br>
+                            <p><b>Email : </b>' . $_POST['email'] . '<br>
+                            <p><b>Email : </b>' . $_POST['phone'] . '<br>
+                            <b>Message : </b>' . htmlspecialchars($_POST['message']) . '</p>';
+
+                            $retour = mail('trainingcenter@parisvillaroche.com', 'Envoi depuis page Contact', $message, $entete);
+                            if($retour)
+                                echo '<p style="color: lightgreen;">Votre message a bien été envoyé !</p>';
+                        }
+                    ?>
+
+
                     </div>
-                    <div class="about-right">
-                        <h2>E-LEARNING pour les apprenants</h2>
-                        <p class="text">Pour se former, les apprenants auront accès à des modules qui délivrent du contenu pédagogique et qui peuvent inclure différentes interactions comme des mini jeux, des questionnaires à choix multiple et des quiz.</p>
-                        <p class="text">En plus de modules de formations, les apprenants pour se former via :</p>
-                        <p class="text"><i class="ri-checkbox-circle-fill"></i> Cours en formats vidéos, <br><i class="ri-checkbox-circle-fill"></i> Audio ou en vidéo-conférence. <br><i class="ri-checkbox-circle-fill"></i> Cours en formats texte PDF. </p>
-                        <p class="text">De plus, les vidéos sont en accès libre et peuvent être revisionné autant de fois que souhaité. Avec cette plateforme d’apprentissage les apprenants pourront d’une part, suivre en temps réel leurs progressions mais aussi, s’auto-évaluer en toute autonomie.</p>
+                    <div class="contact-right">
+
+                        <div class="contact-item">
+                            <span class="contact-icon flex">
+                                <i class="fa fa-phone-alt"></i>
+                            </span>
+                            <div>
+                                <span>Téléphone</span>
+                                <p class="text">07 57 07 94 55</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="contact-item">
+                            <span class="contact-icon flex">
+                                <i class="fa fa-map-marked-alt"></i>
+                            </span>
+                            <div>
+                                <span>Adresse</span>
+                                <p class="text">Aérodrome de Melun Villaroche
+                                    77950 Montereau-sur-le-Jard</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="contact-item">
+                            <span class="contact-icon flex">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                            <div>
+                                <span>Message</span>
+                                <p class="text">trainingcenter@parisvillaroche.com</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <br><br>
+
+            </div>
+
         </section>
 
 
 
-        <section id="presentaion" class="py-4">
-            <div class="container">
-                <img src="img/img-learning/cours.png" alt="about img">
-                <br><br><br>
-                <h2>E-LEARNING pour les formateurs</h2>
-                <br>
-                <p class="text">Les formateurs pourront donc :</p>
-                <br>
-                <p class="text">
-                    <i class="ri-checkbox-circle-fill"></i> Concevoir les programmes et les modules de formation à travers l’ingénierie pédagogique. <br><i class="ri-checkbox-circle-fill"></i> Maîtriser les outils digitaux de conception et de diffusion de la formation. <br><i class="ri-checkbox-circle-fill"></i> Animer ses formations.
-                </p>
-            </div>
-    </div>
-    </section>
-    </section>
 
 
-
-
-
-    <!--==================== SPONSORS ====================-->
-    <section class="sponsor section">
-        <div class="sponsor__container container grid">
-            <div class="sponsor__content">
-                <img src="img/img-logo/CAMVS.jpg" alt="" class="sponsor__img">
+        <!--==================== SPONSORS ====================-->
+        <section class="sponsor section">
+            <div class="sponsor__container container grid">
+                <div class="sponsor__content">
+                    <img src="img/img-logo/CAMVS.jpg" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="img/img-logo/logo-ue.jpg" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="img/img-logo/htec.jpg" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="img/img-logo/PREF77.jpg" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="img/img-logo/region-IDF.jpg" alt="" class="sponsor__img">
+                </div>
             </div>
-            <div class="sponsor__content">
-                <img src="img/img-logo/logo-ue.jpg" alt="" class="sponsor__img">
-            </div>
-            <div class="sponsor__content">
-                <img src="img/img-logo/htec.jpg" alt="" class="sponsor__img">
-            </div>
-            <div class="sponsor__content">
-                <img src="img/img-logo/PREF77.jpg" alt="" class="sponsor__img">
-            </div>
-            <div class="sponsor__content">
-                <img src="img/img-logo/region-IDF.jpg" alt="" class="sponsor__img">
-            </div>
-        </div>
-    </section>
+        </section>
     </div>
 
     <!--==================== FOOTER ====================-->
@@ -270,9 +320,47 @@
         <i class="ri-arrow-up-line scrollup__icon"></i>
     </a>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
-
+    <script>
+        $('.blog-row').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            nextArrow: $('.next'),
+            prevArrow: $('.prev'),
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>

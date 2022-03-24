@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -102,8 +103,8 @@
 
     <!-- img background -->
 
-    <section class="distance">
-        <h2>E-Learning</h2>
+    <section class="propos">
+        <h2>Planète-Science </h2>
     </section>
     <br><br><br><br>
     <div class="main">
@@ -111,69 +112,60 @@
         <section id="presentaion" class="py-4">
             <div class="container">
                 <div class="title-wrap">
-                    <h2 class="lg-title">Formation à distance</h2>
+                    <h2 class="lg-title">Conception et de la réalisation de projets spatiaux</h2>
                     <br>
-                    <span class="sm-title" style="display: inline;"> Cette plateforme à distance a été mise en place par le Training Center 4.0 dans le but d'améliorer la qualité de l’apprentissage en facilitant d’une part l’accès à des ressources et à des services, d’autre part les échanges et la collaboration à distance.</span>
+                    <span class="sm-title" style="display: inline;">Propose aux jeunes des activités scientifiques d'appréhender et de toucher du doigt les difficultés ou les notions nécessaires professionnelles.</span>
 
                 </div>
                 <br><br>
-                <div class="about-row">
-                    <div class="about-left my-2">
-                        <img src="img/img-learning/paris-villarocheTC.png" alt="about img">
-                    </div>
-                    <div class="about-right">
-                        <h2>E-LEARNING pour les apprenants</h2>
-                        <p class="text">Pour se former, les apprenants auront accès à des modules qui délivrent du contenu pédagogique et qui peuvent inclure différentes interactions comme des mini jeux, des questionnaires à choix multiple et des quiz.</p>
-                        <p class="text">En plus de modules de formations, les apprenants pour se former via :</p>
-                        <p class="text"><i class="ri-checkbox-circle-fill"></i> Cours en formats vidéos, <br><i class="ri-checkbox-circle-fill"></i> Audio ou en vidéo-conférence. <br><i class="ri-checkbox-circle-fill"></i> Cours en formats texte PDF. </p>
-                        <p class="text">De plus, les vidéos sont en accès libre et peuvent être revisionné autant de fois que souhaité. Avec cette plateforme d’apprentissage les apprenants pourront d’une part, suivre en temps réel leurs progressions mais aussi, s’auto-évaluer en toute autonomie.</p>
+
+                <div class="air">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/planète-sciences/AZMD2105.JPEG" alt=""></div>
+                            <div class="swiper-slide"><img src="img/planète-sciences/DTWY2373.JPEG"></div>
+                            <div class="swiper-slide"><img src="img/planète-sciences/EZGO1597.JPEG" alt=""></div>
+                            <div class="swiper-slide"><img src="img/planète-sciences/GGUZ4443.JPEG"></div>
+
+
+
+                        </div>
+                        <div class="pagination"></div>
                     </div>
                 </div>
-                <br><br>
+                <div class="video-cont">
+                    <video src="img/planète-sciences/HQOV9308.MP4" controls width="700"></video>
+
+
+                </div>
+
+            </div>
         </section>
 
 
 
-        <section id="presentaion" class="py-4">
-            <div class="container">
-                <img src="img/img-learning/cours.png" alt="about img">
-                <br><br><br>
-                <h2>E-LEARNING pour les formateurs</h2>
-                <br>
-                <p class="text">Les formateurs pourront donc :</p>
-                <br>
-                <p class="text">
-                    <i class="ri-checkbox-circle-fill"></i> Concevoir les programmes et les modules de formation à travers l’ingénierie pédagogique. <br><i class="ri-checkbox-circle-fill"></i> Maîtriser les outils digitaux de conception et de diffusion de la formation. <br><i class="ri-checkbox-circle-fill"></i> Animer ses formations.
-                </p>
-            </div>
-    </div>
-    </section>
-    </section>
 
 
-
-
-
-    <!--==================== SPONSORS ====================-->
-    <section class="sponsor section">
-        <div class="sponsor__container container grid">
-            <div class="sponsor__content">
-                <img src="img/img-logo/CAMVS.jpg" alt="" class="sponsor__img">
+        <!--==================== SPONSORS ====================-->
+        <section class="sponsor section">
+            <div class="sponsor__container container grid">
+                <div class="sponsor__content">
+                    <img src="img/img-logo/CAMVS.jpg" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="img/img-logo/logo-ue.jpg" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="img/img-logo/htec.jpg" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="img/img-logo/PREF77.jpg" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="img/img-logo/region-IDF.jpg" alt="" class="sponsor__img">
+                </div>
             </div>
-            <div class="sponsor__content">
-                <img src="img/img-logo/logo-ue.jpg" alt="" class="sponsor__img">
-            </div>
-            <div class="sponsor__content">
-                <img src="img/img-logo/htec.jpg" alt="" class="sponsor__img">
-            </div>
-            <div class="sponsor__content">
-                <img src="img/img-logo/PREF77.jpg" alt="" class="sponsor__img">
-            </div>
-            <div class="sponsor__content">
-                <img src="img/img-logo/region-IDF.jpg" alt="" class="sponsor__img">
-            </div>
-        </div>
-    </section>
+        </section>
     </div>
 
     <!--==================== FOOTER ====================-->
@@ -270,6 +262,21 @@
         <i class="ri-arrow-up-line scrollup__icon"></i>
     </a>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".pagination",
+                clickable: true,
+            },
+        });
+    </script>
 
 
 

@@ -1,738 +1,756 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Training Center 4.0</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/x-icon" href="img/img-icons/favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Training Center 4.0</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="img/img-icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
+
 <body>
 
 
 
-<!-- header start -->
-<header class="header">
-    <div class="ctn">
-        <div class="row v-center">
-            <div class="header-item item-left">
-                <div class="logo">
-                    <a href="index.html"><img src="img/logo.png" alt=""></a>
-                </div>
-            </div>
-            <!-- menu start here -->
-            <div class="header-item item-center">
-                <div class="menu-overlay">
-                </div>
-                <nav class="menu">
-                    <div class="mobile-menu-head">
-                        <div class="go-back"><i class="fa fa-angle-left"></i></div>
-                        <div class="current-menu-title"></div>
-                        <div class="mobile-menu-close">&times;</div>
+    <!-- header start -->
+    <header class="header">
+        <div class="ctn">
+            <div class="row v-center">
+                <div class="header-item item-left">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.png" alt=""></a>
                     </div>
-                    <ul class="menu-main">
-                        <li class="menu-item-has-children">
-                            <a href="#">Nous connaitre <i class="fa fa-angle-down"></i></a>
-                            <div class="sub-menu mega-menu mega-menu-column-4">
-                                <div class="list-item text-center">
-                                    <a href="propos.html">
-                                    <img src="img/p1.jpg" alt="new Product">
-                                    <h4 class="title">Qui sommes nous ?</h4>
-                                    </a>
+                </div>
+                <!-- menu start here -->
+                <div class="header-item item-center">
+                    <div class="menu-overlay">
+                    </div>
+                    <nav class="menu">
+                        <div class="mobile-menu-head">
+                            <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                            <div class="current-menu-title"></div>
+                            <div class="mobile-menu-close">&times;</div>
+                        </div>
+                        <ul class="menu-main">
+                            <li class="menu-item-has-children">
+                                <a href="#">Nous connaitre <i class="fa fa-angle-down"></i></a>
+                                <div class="sub-menu mega-menu mega-menu-column-4">
+                                    <div class="list-item text-center">
+                                        <a href="propos.html">
+                                            <img src="img/p1.jpg" alt="new Product">
+                                            <h4 class="title">Qui sommes nous ?</h4>
+                                        </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="partenaire.html">
+                                            <img src="img/p2.jpg" alt="new Product">
+                                            <h4 class="title">Nos Partenaires</h4>
+                                        </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="inscription.html">
+                                            <img src="img/p3.jpg" alt="new Product">
+                                            <h4 class="title">Inscriptions</h4>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="list-item text-center">
-                                    <a href="partenaire.html">
-                                    <img src="img/p2.jpg" alt="new Product">
-                                    <h4 class="title">Nos Partenaires</h4>
-                                    </a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="formation.html">Formation</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">E-Learning <i class="fa fa-angle-down"></i></a>
+                                <div class="sub-menu single-column-menu">
+                                    <ul>
+                                        <li><a href="distance.html">Formation à distance</a></li>
+                                        <li><a href="outils.html">Outils à disposition</a></li>
+                                    </ul>
                                 </div>
-                                <div class="list-item text-center">
-                                    <a href="inscription.html">
-                                    <img src="img/p3.jpg" alt="new Product">
-                                    <h4 class="title">Inscriptions</h4>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a href="formation.html">Formation</a>
-                        </li>
-						<li class="menu-item-has-children">
-						<a href="#">E-Learning <i class="fa fa-angle-down"></i></a>
-                            <div class="sub-menu single-column-menu">
-                                <ul>
-                                    <li><a href="distance.html">Formation à distance</a></li>
-                                    <li><a href="outils.html">Outils à disposition</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a href="actu.html">Actualités</a>
-                        </li>
-                         <li>
-                            <a href="https://www.paris-villaroche-training-center.parcours.pro/" target="_blank">Plateforme</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- menu end here -->
-            <div class="header-item item-right">
-                <!-- <a href="#"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="actu.html">Actualités</a>
+                            </li>
+                            <li>
+                                <a href="https://www.paris-villaroche-training-center.parcours.pro/" target="_blank">Plateforme</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- menu end here -->
+                <div class="header-item item-right">
+                    <!-- <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"> <i class="fab fa-linkedin"></i></a> -->
-                
-                <!-- mobile menu trigger -->
-                <div class="mobile-menu-trigger">
-                    <span></span>
+
+                    <!-- mobile menu trigger -->
+                    <div class="mobile-menu-trigger">
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
- </header>
+    </header>
 
- <!-- header end -->
+    <!-- header end -->
 
- <!-- img background -->
+    <!-- img background -->
 
-<section class="partenaire">
-    <h2>Nos Partenaires</h2>
-</section>
+    <section class="partenaire">
+        <h2>Nos Partenaires</h2>
+    </section>
 
-<div class="main">
-    <section id="partners" class = "py-4">
-        <div class = "container">
-            <div class = "title-wrap">
-                <br><br><br>
-                <h2 class = "lg-title" style="color: #fff;">Découvrez ici</h2>
-                <span class = "sm-title" style="display: inline; color: #fff;">Les partenaires du Training Center 4.0 </span>
-            </div>
-            <br><br>
-            
-            <div class="part-body">
+    <div class="main">
+        <section id="partners" class="py-4">
+            <div class="container">
+                <div class="title-wrap">
+                    <br><br><br>
+                    <h2 class="lg-title" style="color: #fff;">Découvrez ici</h2>
+                    <span class="sm-title" style="display: inline; color: #fff;">Les partenaires du Training Center 4.0 </span>
+                </div>
+                <br><br>
+
+                <div class="part-body">
                     <br><br><br><br>
                     <div class="slider owl-carousel">
                         <div class="card">
                             <img src="img/img-partenaires/cfa.png" alt="">
-                           
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                CFA Académie de Créteil 
-                              </div>
-                              <br>
-                              <p class="text-part">
-                             Ministère de l'enseignement supérieur, de la recherche et de l'innovation
-                              </p>
-                              
-                              
-                             
-                           </div>
+
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    CFA Académie de Créteil
+                                </div>
+                                <br>
+                                <p class="text-part">
+                                    Ministère de l'enseignement supérieur, de la recherche et de l'innovation
+                                </p>
+
+
+
+                            </div>
                         </div>
-        
-        
+
+
                         <div class="card">
-                              <img src="img/img-partenaires/LdV.png" alt="">
-                          
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Léonard de Vinci 
-                              </div>
-                              <p class="text-part">
-                                Lycée polyvalant melun
-                              </p>
-                              <a href="ldv.html" class="btn">En savoir plus</a>
-                           </div>
+                            <img src="img/img-partenaires/LdV.png" alt="">
+
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Léonard de Vinci
+                                </div>
+                                <p class="text-part">
+                                    Lycée polyvalant melun
+                                </p>
+                                <a href="ldv.html" class="btn">En savoir plus</a>
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/safran-aircraft.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Safran Aircraft Engines 
-                              </div>
-                              <p class="text-part">
-                                Safran Aircraft Engines, conçoit, développe, produit et commercialise, seul ou en coopération, des moteurs pour avions civils et militaires, ainsi que pour satellites
-                              </p>
-                              <a href="safran.html" class="btn">En savoir plus</a>
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Safran Aircraft Engines
+                                </div>
+                                <p class="text-part">
+                                    Safran Aircraft Engines, conçoit, développe, produit et commercialise, seul ou en coopération, des moteurs pour avions civils et militaires, ainsi que pour satellites
+                                </p>
+                                <a href="safran.html" class="btn">En savoir plus</a>
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/Logo officiel EOZ - Français.jpg">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                EOZ
-                              </div>
-                              <p class="text-part">
-                                Fabricant français de claviers, boutons poussoirs, composants et solutions personnalisées d'Interfaces Homme Machine de qualité.
-                              </p>
-                    
-                              <a href="#" class="btn">En savoir plus</a>
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    EOZ
+                                </div>
+                                <p class="text-part">
+                                    Fabricant français de claviers, boutons poussoirs, composants et solutions personnalisées d'Interfaces Homme Machine de qualité.
+                                </p>
+
+                                <a href="EOZ.html" class="btn">En savoir plus</a>
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/jbplogo.jpg">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Jpb systeme
-                              </div>
-                              <p class="text-part">
-                                Bureau d'étude aéronautique et mécanique de précision
-                              </p>
-                              
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Jpb systeme
+                                </div>
+                                <p class="text-part">
+                                    Bureau d'étude aéronautique et mécanique de précision
+                                </p>
+
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/logo_planetesciences_iledefrance_couleur.gif">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Planète sciences
-                              </div>
-                              <p class="text-part">
-                                Association qui a pour objectifs de favoriser l'intérêt, la découverte et la pratique des sciences auprès des jeunes
-                              </p>
-                              <a href="science.html" class="btn">En savoir plus</a>
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Planète sciences
+                                </div>
+                                <p class="text-part">
+                                    Association qui a pour objectifs de favoriser l'intérêt, la découverte et la pratique des sciences auprès des jeunes
+                                </p>
+                                <a href="science.html" class="btn">En savoir plus</a>
+                            </div>
                         </div>
                         <div class="card">
                             <img src="img/img-partenaires/FF.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                La french fab
-                              </div>
-                              <p class="text-part">
-                                La French Fab est un label français qui a pour but de fédérer les industriels et renforcer la promotion de l’industrie française à l’étranger
-                              </p>
-                              
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    La french fab
+                                </div>
+                                <p class="text-part">
+                                    La French Fab est un label français qui a pour but de fédérer les industriels et renforcer la promotion de l’industrie française à l’étranger
+                                </p>
+
+                            </div>
                         </div>
                         <div class="card">
                             <img src="img/img-partenaires/france-cluster.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                France Clusters
-                              </div>
-                              <p class="text-part">
-                                France CLUSTERS pôles de compétitivité et outils d’accélération des PME.
-        
-                              </p>
-                              
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    France Clusters
+                                </div>
+                                <p class="text-part">
+                                    France CLUSTERS pôles de compétitivité et outils d’accélération des PME.
+
+                                </p>
+
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/cam-system.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                ESPRIT
-                              </div>
-                              <p class="text-part">
-                                La solution FAO mondiale leader pour les pièces à forte valeur ajouté et les applications d'usinage complexes.
-                              </p>
-                             
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    ESPRIT
+                                </div>
+                                <p class="text-part">
+                                    La solution FAO mondiale leader pour les pièces à forte valeur ajouté et les applications d'usinage complexes.
+                                </p>
+
+                            </div>
                         </div>
                         <div class="card">
                             <img src="img/img-partenaires/hexagon.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                HEXAGON
-                              </div>
-                              <p class="text-part">
-                                Hexagon un groupe industriel spécialisé dans les nouvelles technologies.
-                              </p>
-                              
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    HEXAGON
+                                </div>
+                                <p class="text-part">
+                                    Hexagon un groupe industriel spécialisé dans les nouvelles technologies.
+                                </p>
+
+                            </div>
                         </div>
                         <div class="card">
                             <img src="img/img-partenaires/REGION_IDF.jpg">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Region île-de-france
-                              </div>
-                              <p class="text-part">
-                                La Région Île-de-France exprime sa solidarité et tout son soutien au peuple ukrainien
-                              </p>
-                             
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Region île-de-france
+                                </div>
+                                <p class="text-part">
+                                    La Région Île-de-France exprime sa solidarité et tout son soutien au peuple ukrainien
+                                </p>
+
+                            </div>
                         </div>
                         <div class="card">
                             <img src="img/img-partenaires/pole-emploi.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Pôle Emploi
-                              </div>
-                              <p class="text-part">
-                                Pôle emploi est un établissement public à caractère administratif, chargé de l'emploi en France.
-                              </p>
-                             
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Pôle Emploi
+                                </div>
+                                <p class="text-part">
+                                    Pôle emploi est un établissement public à caractère administratif, chargé de l'emploi en France.
+                                </p>
+
+                            </div>
                         </div>
                         <div class="card">
                             <img src="img/img-logo/CAMVS.jpg">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Melun Val-de-Seine
-                              </div>
-                              <p class="text-part">
-                                La communauté d'agglomération Melun Val de Seine est située en région Île-de-France, dans le département de Seine-et-Marne.
-                              </p>
-                             
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Melun Val-de-Seine
+                                </div>
+                                <p class="text-part">
+                                    La communauté d'agglomération Melun Val de Seine est située en région Île-de-France, dans le département de Seine-et-Marne.
+                                </p>
+
+                            </div>
                         </div>
-        
+
                         <div class="card">
-                            <img src="img/img-partenaires/eu.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                L'Europe
-                              </div>
-                              <p class="text-part">
-                                L'Europe s'engage en France, le portail des Fonds européens.
-                              </p>
-                              <a href="#" class="btn">En savoir plus</a>
-                           </div>
+                            <img src="img/img-logo/logo-ue.jpg">
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    L'Europe
+                                </div>
+                                <p class="text-part">
+                                    L'Europe s'engage en France, le portail des Fonds européens.
+                                </p>
+                                <a href="#" class="btn" onclick="toggle();">En savoir plus</a>
+                                <!-- <div class="trailer">
+                                <video src="video/Europe.mp4" controls="true"></video>
+                                <i class="ri-close-line close" onclick="toggle();"></i>
+                              </div> -->
+                            </div>
+
                         </div>
-        
+
+
                         <div class="card">
                             <img src="img/img-partenaires/imc.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Member IMC Group
-                              </div>
-                              <p class="text-part">
-                                Fournir des
-                                solutions d'outillage complètes pour l'enlèvement de métal
-                              </p>
-                              
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Member IMC Group
+                                </div>
+                                <p class="text-part">
+                                    Fournir des
+                                    solutions d'outillage complètes pour l'enlèvement de métal
+                                </p>
+
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/uimm.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Union des Industries
-                              </div>
-                              <p class="text-part">
-                                L’Union des industries et métiers de la métallurgie (UIMM)
-                              </p>
-                            
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Union des Industries
+                                </div>
+                                <p class="text-part">
+                                    L’Union des industries et métiers de la métallurgie (UIMM)
+                                </p>
+
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/logo-Alliance-Industrie-du-Futur.jpg">
-                           <div class="content">
-                              
-                              <div class="sub-title">
-                                Alliance Industries du futur
-                              </div>
-                              <p class="text-part">
-                                Fédération patronale française travaillant dans le domaine de la métallurgie.
-                              </p>
-                              <a href="#" class="btn">En savoir plus</a>
-                           </div>
+                            <div class="content">
+
+                                <div class="sub-title">
+                                    Alliance Industries du futur
+                                </div>
+                                <p class="text-part">
+                                    Fédération patronale française travaillant dans le domaine de la métallurgie.
+                                </p>
+
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/HASSTEC.PNG">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Hass TEC
-                              </div>
-                              <p class="text-part">
-                                La communauté de formation technique Haas (HTEC) est un programme de partenariat mondial
-                              </p>
-                              
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Hass TEC
+                                </div>
+                                <p class="text-part">
+                                    La communauté de formation technique Haas (HTEC) est un programme de partenariat mondial
+                                </p>
+
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/RAA.jpg">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Préfet de Seine-et-Marne
-                              </div>
-                              <p class="text-part">
-                                Direction Départementale des Territoires (DDT) - Seine-Et-Marne
-                              </p>
-                              
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Préfet de Seine-et-Marne
+                                </div>
+                                <p class="text-part">
+                                    Direction Départementale des Territoires (DDT) - Seine-Et-Marne
+                                </p>
+
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/ministere-logo.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Ministère du travail, de l'emploi et de l'insertion
-                              </div>
-                              <p class="text-part">
-                                Prépare et met en œuvre la politique du Gouvernement dans les domaines du travail et de l'emploi.
-                              </p>
-                             
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Ministère du travail, de l'emploi et de l'insertion
+                                </div>
+                                <p class="text-part">
+                                    Prépare et met en œuvre la politique du Gouvernement dans les domaines du travail et de l'emploi.
+                                </p>
+
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/sncp.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                SNCP
-                              </div>
-                              <p class="text-part">
-                                Le SNCP défend les intérêts spécifiques de tous les acteurs de l’industrie du caoutchouc
-                              </p>
-                              
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    SNCP
+                                </div>
+                                <p class="text-part">
+                                    Le SNCP défend les intérêts spécifiques de tous les acteurs de l’industrie du caoutchouc
+                                </p>
+
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/AMICS.jpg">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Amics
-                              </div>
-                              <p class="text-part">
-                                L'association professionnelle de la mécanique
-                              </p>
-                              
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Amics
+                                </div>
+                                <p class="text-part">
+                                    L'association professionnelle de la mécanique
+                                </p>
+
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/lpf-pastille-1-93x94.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Groupe Le Piston Francais
-                              </div>
-                              <p class="text-part">
-                                Le Groupe LPF, spécialiste de l'usinage des métaux durs et de l'assemblage mécanique.
-                              </p>
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Groupe Le Piston Francais
+                                </div>
+                                <p class="text-part">
+                                    Le Groupe LPF, spécialiste de l'usinage des métaux durs et de l'assemblage mécanique.
+                                </p>
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/ASTECH.jpg">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                ASTECH
-                              </div>
-                              <p class="text-part">
-                                Astech Paris Région est un pôle de compétitivité français spécialisé dans l'aéronautique, l'espace et les systèmes embarqués
-                              </p>
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    ASTECH
+                                </div>
+                                <p class="text-part">
+                                    Astech Paris Région est un pôle de compétitivité français spécialisé dans l'aéronautique, l'espace et les systèmes embarqués
+                                </p>
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/logo_blaser-RVB.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Blaser
-                              </div>
-                              <p class="text-part">
-                                Blaser proposer des produits haut de gamme fiables qui sont compatibles à l’humain et respectueux de l’environnement.</p>
-                              </p>
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Blaser
+                                </div>
+                                <p class="text-part">
+                                    Blaser proposer des produits haut de gamme fiables qui sont compatibles à l’humain et respectueux de l’environnement.</p>
+                                </p>
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/autodesk.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Autodesk
-                              </div>
-                              <p class="text-part">
-                                Autodesk est une société d'édition de logiciels de création et de contenu numérique assistée par ordinateur AutoCAD.</p>
-                              </p>
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Autodesk
+                                </div>
+                                <p class="text-part">
+                                    Autodesk est une société d'édition de logiciels de création et de contenu numérique assistée par ordinateur AutoCAD.</p>
+                                </p>
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/airlegend.jpg">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Paris Villaroche Air Legend 
-                              </div>
-                              <p class="text-part">
-                                Venez découvrir l'édition 2022 de Air Legend ! Notez les dates des 10-11 septembre 2022 !
-                              </p>
-                              <a href="air-legend.html" class="btn">En savoir plus</a>
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Paris Villaroche Air Legend
+                                </div>
+                                <p class="text-part">
+                                    Venez découvrir l'édition 2022 de Air Legend ! Notez les dates des 10-11 septembre 2022 !
+                                </p>
+                                <a href="air-legend.html" class="btn">En savoir plus</a>
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/avsf.png">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                Aviation sans frontières
-                              </div>
-                              <p class="text-part">
-                               Utilise le réseau aérien ainsi que sa propre flotte pour venir en aide aux plus démunis.
-                              </p>
-                              <a href="#" class="btn">En savoir plus</a>
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    Aviation sans frontières
+                                </div>
+                                <p class="text-part">
+                                    Utilise le réseau aérien ainsi que sa propre flotte pour venir en aide aux plus démunis.
+                                </p>
+                                <a href="avsf.html" class="btn">En savoir plus</a>
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/fbene.jpg">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                France Bénévolat
-                              </div>
-                              <p class="text-part">
-                                France Bénévolat est une association reconnue d’utilité publique.
-                              </p>
-                            
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    France Bénévolat
+                                </div>
+                                <p class="text-part">
+                                    France Bénévolat est une association reconnue d’utilité publique.
+                                </p>
+
+                            </div>
                         </div>
-        
+
                         <div class="card">
                             <img src="img/img-partenaires/LEM.jpg">
-                           <div class="content">
-                              <div class="title">
-                                
-                              </div>
-                              <div class="sub-title">
-                                LEM
-                              </div>
-                              <p class="text-part">
-                                Le LEM est un prestataire en contrôle non destructif (CND), nettoyage cryogénique et assemblage.
-                              </p>
-                              
-                           </div>
+                            <div class="content">
+                                <div class="title">
+
+                                </div>
+                                <div class="sub-title">
+                                    LEM
+                                </div>
+                                <p class="text-part">
+                                    Le LEM est un prestataire en contrôle non destructif (CND), nettoyage cryogénique et assemblage.
+                                </p>
+
+                            </div>
                         </div>
-        
+
                     </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--==================== SPONSORS ====================-->
+        <section class="sponsor section">
+            <div class="sponsor__container container grid">
+                <div class="sponsor__content">
+                    <img src="img/img-logo/CAMVS.jpg" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="img/img-logo/logo-ue.jpg" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="img/img-logo/htec.jpg" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="img/img-logo/PREF77.jpg" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="img/img-logo/region-IDF.jpg" alt="" class="sponsor__img">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <h3 class="footer__title">Training Center 4.0</h3>
+                    <br>
+                    <p class="footer__description"> Centre de formation aéronautique et industriel soutenu par l'Europe.
+                    </p>
+                    <div>
+                        <a href="https://m.facebook.com/trainingcentersympav/" target="_blank" class="footer__social">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/TCenter4_0/" target="_blank" class="footer__social">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/trainingcenter4.0/" target="_blank" class="footer__social">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCqan073e4fkLA_HtG_uWk8Q" target="_blank" class="footer__social">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tcenter-sympav-28bb571a3/" target="_blank" class="footer__social">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">À propos </h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="formation.html" class="footer__link">Formation</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="actu.html" class="footer__link">Actualités </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://www.paris-villaroche-training-center.parcours.pro/" target="_blank" class="footer__link">Plateforme</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="contact.html" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Informations</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Aérodrome de Melun Villaroche<br>
+                                77950 Montereau-sur-le-Jard</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">trainingcenter@parisvillaroche.com</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">07 57 07 94 55</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Qui sommes-nous</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Partenaires</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Inscriptions</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
+            <div class="footer__rights">
+                <p class="footer__copy">&#169; 2022 Training Center 4.0. Tous droits réservés.</p>
+                <div class="footer__terms">
+                    <a href="#" class="footer__terms-link">Termes et accords</a>
+                    <a href="#" class="footer__terms-link">Politique de confidentialité</a>
+                </div>
+            </div>
         </div>
-    </section>
-
-	
-	<!--==================== SPONSORS ====================-->
-	<section class="sponsor section">
-		<div class="sponsor__container container grid">
-			<div class="sponsor__content">
-				<img src="img/img-logo/CAMVS.jpg" alt="" class="sponsor__img">
-			</div>
-			<div class="sponsor__content">
-				<img src="img/img-partenaires/eu.png" alt="" class="sponsor__img">
-			</div>
-			<div class="sponsor__content">
-				<img src="img/img-logo/htec.jpg" alt="" class="sponsor__img">
-			</div>
-			<div class="sponsor__content">
-				<img src="img/img-logo/PREF77.jpg" alt="" class="sponsor__img">
-			</div>
-			<div class="sponsor__content">
-				<img src="img/img-logo/region-IDF.jpg" alt="" class="sponsor__img">
-			</div>
-		</div>
-	</section>
-</div>
-
- <!--==================== FOOTER ====================-->
- <footer class="footer section">
-	<div class="footer__container container grid">
-		<div class="footer__content grid">
-			<div class="footer__data">
-				<h3 class="footer__title">Training Center 4.0</h3>
-				<br>
-				<p class="footer__description"> Centre de formation aéronautique et industriel soutenu par l'Europe.
-				</p>
-				<div>
-					<a href="https://m.facebook.com/trainingcentersympav/" target="_blank" class="footer__social">
-						<i class="ri-facebook-box-fill"></i>
-					</a>
-					<a href="https://twitter.com/TCenter4_0/" target="_blank" class="footer__social">
-						<i class="ri-twitter-fill"></i>
-					</a>
-					<a href="https://www.instagram.com/trainingcenter4.0/" target="_blank" class="footer__social">
-						<i class="ri-instagram-fill"></i>
-					</a>
-					<a href="https://www.youtube.com/channel/UCqan073e4fkLA_HtG_uWk8Q" target="_blank" class="footer__social">
-						<i class="ri-youtube-fill"></i>
-					</a>
-					<a href="https://www.linkedin.com/in/tcenter-sympav-28bb571a3/" target="_blank" class="footer__social">
-						<i class="ri-linkedin-fill"></i>
-					</a>
-				</div>
-			</div>
-
-			<div class="footer__data">
-				<h3 class="footer__subtitle">À propos </h3>
-				<ul>
-					<li class="footer__item">
-						<a href="formation.html" class="footer__link">Formation</a>
-					</li>
-					<li class="footer__item">
-						<a href="actu.html" class="footer__link">Actualités </a>
-					</li>
-					<li class="footer__item">
-						<a href="https://www.paris-villaroche-training-center.parcours.pro/" target="_blank" class="footer__link">Plateforme</a>
-					</li>
-					<li class="footer__item">
-						<a href="contact.html" class="footer__link">Contact</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="footer__data">
-				<h3 class="footer__subtitle">Informations</h3>
-				<ul>
-					<li class="footer__item">
-						<a href="" class="footer__link">Aérodrome de Melun Villaroche<br>
-							77950 Montereau-sur-le-Jard</a>
-					</li>
-					<li class="footer__item">
-						<a href="" class="footer__link">trainingcenter@parisvillaroche.com</a>
-					</li>
-					<li class="footer__item">
-						<a href="" class="footer__link">06 38 40 54 23</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="footer__data">
-				<h3 class="footer__subtitle">Support</h3>
-				<ul>
-					<li class="footer__item">
-						<a href="" class="footer__link">Qui sommes-nous</a>
-					</li>
-					<li class="footer__item">
-						<a href="" class="footer__link">Partenaires</a>
-					</li>
-					<li class="footer__item">
-						<a href="" class="footer__link">Inscriptions</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="footer__rights">
-			<p class="footer__copy">&#169; 2022 Training Center 4.0. Tous droits réservés.</p>
-			<div class="footer__terms">
-				<a href="#" class="footer__terms-link">Termes et accords</a>
-				<a href="#" class="footer__terms-link">Politique de confidentialité</a>
-			</div>
-		</div>
-	</div>
-</footer>
+    </footer>
 
 
     <!--========== SCROLL UP ==========-->
-	<a href="#" class="scrollup scroll-up" >
-		<i class="ri-arrow-up-line scrollup__icon"></i>
-	</a>
+    <a href="#" class="scrollup scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
 
-	<script>
-		$(".slider").owlCarousel({
-		  loop: true,
-		  autoplay: true,
-		  autoplayTimeout: 2000, //2000ms = 2s;
-		  autoplayHoverPause: true,
-		});
-	 </script>
-  
-	
+    <script>
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000, //2000ms = 2s;
+            autoplayHoverPause: true,
+        });
+    </script>
 
-<script src="js/scrollreveal.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/script.js"></script>
+    <!-- <script>
+    function toggle(){
+      let trailer = document.querySelector(".trailer")
+      let video = document.querySelector("video")
+      trailer.classList.toggle("active");
+      video.pause();
+      video.currentTime = 0;
+    }
+  </script> -->
+
+
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
