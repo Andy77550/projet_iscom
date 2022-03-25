@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
 
 </head>
 
@@ -79,7 +81,7 @@
                                 <a href="https://www.paris-villaroche-training-center.parcours.pro/" target="_blank">Plateforme</a>
                             </li>
                             <li>
-                                <a href="contact.html">Contact</a>
+                                <a href="contact.php">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -130,14 +132,15 @@
                 </div>
                 <div class="contact-row">
                     <div class="contact-left">
-                        <form class="contact-form">
+                        <form class="contact-form"  method="post">
                             <input type="text" name="nom" class="form-control" placeholder="Nom/Prénom" required>
                             <input type="email" name="email" class="form-control" placeholder=" Email" required>
                             <input type="text" name="phone" class="form-control" placeholder="Téléphone">
+                            <input type="text" name="sujet" class="form-control" placeholder="Sujet">
                             <textarea rows="4" name="message" class="form-control" placeholder="Your message" style="resize: none;" aria-required></textarea>
                             <input type="checkbox"> Je souhaite recevoir les informations complémentaires
                             <br><br>
-                            <input type="submit" class="btn-form" value="Envoyer">
+                            <input type="submit" id="submit" class="btn-form" value="Envoyer">
                         </form>
                         <?php
                         if (isset($_POST['message'])) {
@@ -146,15 +149,41 @@
                             $entete .= 'From:' . $_POST["email"] . "\r\n";
                             $entete .= 'Reply-to: ' . $_POST['email'];
 
-                            $message = '<h3>Ce message vous a été envoyé via la page contact du site Training Center 4.0</h3>
-                            Nom : '. $_POST["nom"] . '<br>
-                            <p><b>Email : </b>' . $_POST['email'] . '<br>
-                            <p><b>Email : </b>' . $_POST['phone'] . '<br>
-                            <b>Message : </b>' . htmlspecialchars($_POST['message']) . '</p>';
+                            
+                            $message = '
+                            <html>
+                                <head>
+                                <style>
+                                    .mail{
+                                        border: 2px solid #273c75;
+                                        border-radius: 10px;
+                                        text-align: center;
+                                    }
+                                </style>
+                                
+                                </head>
+                                <body>
+                                    <div class="mail">
+                                        <img src="https://www.parisvillaroche.com/themes/thegobeliners/images/logo-tc4.png" width="300" height="300"/>
+                                        <h3 style="color: #273c75">Ce message vous a été envoyé via la page contact du site Training Center 4.0</h3>
+                                        <br>
+                                        <p><b style="color: #273c75">Nom/Prénom : </b>'. $_POST["nom"] . '<br>
+                                        <p><b style="color: #273c75">Email : </b>' . $_POST['email'] . '<br>
+                                        <p><b style="color: #273c75">Téléphone : </b>' . $_POST['phone'] . '<br>
+                                        <p><b style="color: #273c75">Message : </b>' . htmlspecialchars($_POST['message']) . '</p>
+                                    </div>
 
-                            $retour = mail('trainingcenter@parisvillaroche.com', 'Envoi depuis page Contact', $message, $entete);
-                            if($retour)
-                                echo '<p style="color: lightgreen;">Votre message a bien été envoyé !</p>';
+
+                                </body>
+                            </html>';
+                           
+
+                            $retour = mail('trainingcenter@parisvillaroche.com', $_POST["sujet"], $message, $entete);
+                            
+                            if($retour){
+                               echo "<br><p style='color: #273c75; text-align: center;'>L'email a bien été envoyé !</p>";        
+                            }
+                               
                         }
                     ?>
 
@@ -267,7 +296,7 @@
                             <a href="https://www.paris-villaroche-training-center.parcours.pro/" target="_blank" class="footer__link">Plateforme</a>
                         </li>
                         <li class="footer__item">
-                            <a href="contact.html" class="footer__link">Contact</a>
+                            <a href="contact.php" class="footer__link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -319,7 +348,8 @@
     <a href="#" class="scrollup scroll-up">
         <i class="ri-arrow-up-line scrollup__icon"></i>
     </a>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
@@ -361,6 +391,7 @@
             ]
         });
     </script>
+    
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
