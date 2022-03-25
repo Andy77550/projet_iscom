@@ -642,13 +642,15 @@ i.ri-checkbox-circle-fill {
         font-size: 1.8em;
     }
 
+    
+
 
 
 }
 
 @media (max-width: 1024px) {
     
-    
+   
     
 
 
@@ -1270,7 +1272,7 @@ i.ri-checkbox-circle-fill {
 .ldv h2,
 .safran h2,
 .eoz h2 {
-    padding-top: 22%;
+    padding-top: 11%;
     font-size: 70px;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
@@ -1479,12 +1481,9 @@ text {
     .featured-row,
     .services-row {
         grid-template-columns: repeat(3, 1fr);
-    }
+    } 
 
-    .propos h2, .distance h2, .outils h2, .actuali h2, .cont h2, .ldv h2, .safran h2, .eoz h2,.formation h2 {
-        padding-top: 16%;
-        
-    }
+    
 
     
 }
@@ -2250,7 +2249,7 @@ input[type="submit"] {
     .services-row,
     .footer-row {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(2, 1fr); */
         gap: 2rem;
     }
 
@@ -2278,6 +2277,12 @@ input[type="submit"] {
     } 
     section{
         padding: 0;
+    }
+
+    .propos h2, .formation h2, .distance h2, .outils h2, .actuali h2, .cont h2, .ldv h2, .safran h2, .eoz h2 {
+        padding-top: 22%;
+        font-size: 60px;
+        
     }
 
 }
@@ -2441,7 +2446,7 @@ input[type="submit"] {
     .propos h2, .formation h2, .distance h2, .outils h2, .actuali h2, .cont h2, .ldv h2, .safran h2, .eoz h2,.partenaire h2 {
         padding-top: 33%;
         font-size: 50px;
-    }
+    } 
 
     .blog-date {
         position: absolute;
@@ -2461,9 +2466,6 @@ input[type="submit"] {
         padding-top: 20px;
     }
 
-    .v-center{
-
-    }
 }
 
 
