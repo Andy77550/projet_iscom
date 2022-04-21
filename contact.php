@@ -160,11 +160,14 @@
                             }
 
                             if (isset($_POST['message'])) {
-                                $to = 'trainingcenter@parisvillaroche.com,'. $_POST["email"];
                                 $entete  = 'MIME-Version: 1.0' . "\r\n";
                                 $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
                                 $entete .= 'From:' . $_POST["email"] . "\r\n";
-                                $entete .= 'Reply-to: ' . $_POST['email'];
+                                $entete .= 'Reply-to: ' . $_POST['email'] ."\r\n";
+
+                                $entete2  = 'MIME-Version: 1.0' . "\r\n";
+                                $entete2 .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+                                $entete2 .= 'From:trainingcenter@parisvillaroche.com' . "\r\n";
                                 
                                 
                                 $message = '
@@ -407,9 +410,167 @@
 
                                 </body>
                                 </html>';
+
+                                $message2 = '<html>
+                                <head>
+                                
+                                <style type="text/css">
+                                    body {
+                                        margin: 0;
+                                        background-color: #cccccc;
+                                    }
+                                    table {
+                                        border-spacing: 0;
+                                    }
+                                    td {
+                                        padding: 0;
+                                    }
+                                    img {
+                                        border: 0;
+                                        
+                                    }
+                                    .wrapper{
+                                        width: 100%;
+                                        table-layout: fixed;
+                                        background-color: #cccccc;
+                                        padding-bottom: 40px;
+                                    }
+
+                                    .main{
+                                        background-color: #fff;
+                                        margin: 0 auto;
+                                        width: 100%;
+                                        max-width: 600px;
+                                        border-spacing: 0;
+                                        font-family: sans-serif;
+                                        color: #4a4a4a;
+                                    }
+
+                                    .two-columns{
+                                        text-align: center;
+                                        font-size: 0;
+                                        padding: 40px 0;
+                                    }
+
+                                    .two-columns .column{
+                                        width: 100%;
+                                        max-width: 300px;
+                                        display: inline-block;
+                                        vertical-align: top;
+                                    }
+
+                                    .two-columns .padding{
+                                        padding: 20px;
+                                    }
+
+                                    .two-columns .content{
+                                        text-align: left;
+                                        font-size: 15px;
+                                        line-height: 20px;
+                                    }
+
+                                    .icons{
+                                        letter-spacing: 15px;
+                                    }
+
+                                    a{
+                                        text-decoration: none;
+                                        color: #273c75;
+                                    }
+
+
+
+                                    @media screen and (max-width: 600px) { 
+                                        .two-columns .content img{
+                                            width: 300px!important;
+                                            max-width: 300px!important;
+                                        }
+
+                                        .padding{
+                                            padding-right: 0!important;
+                                            padding-left: 0!important;
+                                        }
+                                        
+                                    }
+                                </style>
+                                </head>
+                                <body>
+                                    <center class="wrapper">
+                                        <table class="main" width="100%">
+
+                                            
+                                <!-- BLUE BORDER -->
+                                <tr>
+                                    <td height="45" style="background-color: #273c75;"></td>
+                                </tr>
+
+
+                               
+                                        
+
+
+                                <!-- LOGO SECTION -->
+                                        <tr>
+                                            <td>
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td style="text-align: center;padding: 10px;">
+                                                            <a href="#"><img src="https://www.parisvillaroche.com/themes/thegobeliners/images/logo-tc4.png" alt="Logo" width="120" title="Logo"></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+                                <!-- TITLE, TEXT & BUTTON -->
+                                        <tr>
+                                            <td style="padding-bottom: 40px;">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td style="text-align: center;padding: 15px;">
+                                                            <p style="font-size: 20px;font-weight: bold;color: #273c75;;">Bonjour, '  . $_POST["nom"] . '!</p>
+                                                            <p style="text-align: center;font-size: 15px; line-height: 23px; padding: 5px 0 15px;color: #273c75;">Nous vous remercions de nous avoir contacté via notre site. <br>
+                                                            Nous vous contacterons dans les plus brefs délais.</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+
+
+                                        <!-- SOCIAL MEDIA ICONS -->
+                                        <tr>
+                                            <td>
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td class="icons" style="background-color: #273c75;padding: 8px 0 5px;text-align: center;">
+                                                            <a href="https://m.facebook.com/trainingcentersympav/"><img src="https://i.ibb.co/L9sHFmR/facebook.png" alt="Logo" width="30"></a>
+
+                                                            <a href="https://www.instagram.com/trainingcenter4.0/"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Logo" width="30"></a>
+
+                                                            <a href="https://twitter.com/TCenter4_0/"><img src="https://i.ibb.co/JdSrFBW/twitter.png" alt="Logo" width="30"></a>
+
+                                                            <a href="https://www.youtube.com/channel/UCqan073e4fkLA_HtG_uWk8Q"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Logo" width="30"></a>
+
+                                                            <a href="https://www.linkedin.com/in/tcenter-sympav-28bb571a3/"><img src="https://i.ibb.co/JRCM0mn/linkedin.png" alt="Logo" width="30"></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+
+                                
+                                        </table>
+                                    </center>
+
+                                </body>
+                                </html>';
                             
 
-                                $retour = mail($to, $_POST["sujet"], $message, $entete);
+                                $retour = mail('trainingcenter@parisvillaroche.com', $_POST["sujet"], $message, $entete);
+                                $retour2 = mail($_POST["email"],'Training Center 4.0', $message2, $entete2);
 
 
                                 
@@ -565,9 +726,9 @@
             <div class="footer__rights">
                 <p class="footer__copy">&#169; 2022 Training Center 4.0. Tous droits réservés.</p>
                 <div class="footer__terms">
-                <a href="#" class="footer__terms-link">Politique d’utilisation des cookies</a>
-                    <a href="#" class="footer__terms-link">Mentions légales</a>
-                    <a href="#" class="footer__terms-link">Politique de confidentialité</a>
+                    <a href="politique_cookies.html" class="footer__terms-link">Politique d’utilisation des cookies</a>
+                    <a href="mentions.html" class="footer__terms-link">Mentions légales</a>
+                    <a href="politique_confid.html" class="footer__terms-link">Politique de confidentialité</a>
                 </div>
             </div>
         </div>
@@ -622,7 +783,7 @@
         });
     </script>
     <?php 
-        if($retour){
+        if($retour && $retour2){
             ?>      
                 <script>
                     swal({
